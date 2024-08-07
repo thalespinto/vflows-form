@@ -10,86 +10,156 @@
 
 <body>
     <div class="fluig-style-guide">
-        <h1 class="fs-text-center text-uppercase">Cadastro fornecedor/produto</h1>
-        <h2 class="fs-color-white fs-bg-info fs-no-margin-bottom"
-            style="padding: 10px; border-top-left-radius: 4px; border-top-right-radius: 4px;">Dados do Fornecedor</h2>
-        <form role="form" style="border: 1px solid black; padding: 10px;">
-            <div class="container">
-                <div class="row">
-                    <div class="form-group col-md-8">
-                        <label for="razaoSocial">Razão Social</label>
-                        <input type="text" class="form-control" id="razaoSocial" placeholder="Razão social">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="cnpj">CNPJ</label>
-                        <input type="text" class="form-control" id="cnpj" placeholder="00.000.000/0000-00">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-8">
-                        <label for="nomeFantasia">Nome Fantasia</label>
-                        <input type="text" class="form-control" id="nomeFantasia" placeholder="Nome Fantasia">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="inscricaoEstadual">Inscrição Estadual</label>
-                        <input type="text" class="form-control" id="inscricaoEstadual" placeholder="12345678-9">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-8">
-                        <label for="cep">CEP</label>
-                        <input type="text" class="form-control" id="cep" placeholder="12345-678">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="inscricaoMunicipal">Inscrição Municipal</label>
-                        <input type="text" class="form-control" id="inscricaoMunicipal" placeholder="123456789">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-8">
-                        <label for="endereco">Endereço</label>
-                        <input type="text" class="form-control" id="endereco" placeholder="Rua tal">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="numero">Número</label>
-                        <input type="text" class="form-control" id="numero" placeholder="12">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-12">
-                        <label for="complemento">Complemento</label>
-                        <input type="text" class="form-control" id="complemento" placeholder="apt 101">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-4">
-                        <label for="bairro">Bairro</label>
-                        <input type="text" class="form-control" id="bairro" placeholder="Bairro">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="municipio">Município</label>
-                        <input type="text" class="form-control" id="municipio" placeholder="Município">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="estado">Estado</label>
-                        <input type="text" class="form-control" id="estado" placeholder="Estado">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-6">
-                        <label for="nomeContato">Nome da Pessoa de Contato</label>
-                        <input type="text" class="form-control" id="nomeContato" placeholder="Nome e Sobrenome">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="telefone">Telefone</label>
-                        <input type="text" class="form-control" id="telefone" placeholder="(12) 12345-6789">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="email">E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="email">
-                    </div>
-                </div>
+        <form role="form">
+            <h1 class="fs-text-center text-uppercase">Cadastro fornecedor/produto</h1>
+            <h2 class="fs-color-white fs-bg-info fs-no-margin-bottom"
+                style="padding: .5em; border-top-left-radius: .25em; border-top-right-radius: .25em;">Dados do
+                Fornecedor
+            </h2>
+            <div style="border: 1px solid black; padding: .5em;">
 
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label for="razaoSocial">Razão Social</label>
+                            <input type="text" class="form-control" id="razaoSocial" placeholder="Razão social">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="cnpj">CNPJ</label>
+                            <input type="text" class="form-control" id="cnpj" placeholder="00.000.000/0000-00">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label for="nomeFantasia">Nome Fantasia</label>
+                            <input type="text" class="form-control" id="nomeFantasia" placeholder="Nome Fantasia">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inscricaoEstadual">Inscrição Estadual</label>
+                            <input type="text" class="form-control" id="inscricaoEstadual" placeholder="12345678-9">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label for="cep">CEP</label>
+                            <input type="text" class="form-control" id="cep" placeholder="12345-678">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inscricaoMunicipal">Inscrição Municipal</label>
+                            <input type="text" class="form-control" id="inscricaoMunicipal" placeholder="123456789">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" id="endereco" placeholder="Rua tal">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="numero">Número</label>
+                            <input type="text" class="form-control" id="numero" placeholder="12">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" class="form-control" id="complemento" placeholder="apt 101">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="municipio">Município</label>
+                            <input type="text" class="form-control" id="municipio" placeholder="Município">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="estado">Estado</label>
+                            <input type="text" class="form-control" id="estado" placeholder="Estado">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="nomeContato">Nome da Pessoa de Contato</label>
+                            <input type="text" class="form-control" id="nomeContato" placeholder="Nome e Sobrenome">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" class="form-control" id="telefone" placeholder="(12) 12345-6789">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="email">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <h2 class="fs-color-white fs-bg-info fs-no-margin-bottom"
+                style="padding: .5em; border-top-left-radius: .25em; border-top-right-radius: .25em;">Produtos
+            </h2>
+            <div style="border: 1px solid black; padding: .5em;">
+                <div class="container-fluid" style="margin-top: 2em;">
+                    <div class="row fs-display-flex fs-align-items-center" style="gap: 1.25em;">
+                        <button class="fs-bg-danger fs-no-border fs-border-radius">
+                            <img src="assets/icons/flaticon-trash.png" alt="Ícone Deletar">
+                        </button>
+                        <div class="col-md-11 fs-display-flex fs-align-items-center fs-border-radius"
+                            style="border: 1px solid black; padding: .5em;">
+                            <div style="position: absolute;
+                            top: -.5em;
+                            left: 5%;
+                            transform: translateX(-50%);
+                            background-color: white;
+                            padding: 0 .25em;">
+                                <h3 class="fs-no-margin">Produto - 1</h3>
+                            </div>
+                            <div class="visible-md visible-lg"
+                                style="width: fit-content; padding: 1.25em; background-color: #8290cd; border-radius: 100%;">
+                                <img src="assets/icons/flaticon-product.png" alt="Ícone Deletar">
+                            </div>
+                            <div class="container">
+
+                                <div class="row">
+                                    <div class="form-group col-sm-12">
+                                        <label for="nomeProduto">Nome do Produto</label>
+                                        <input type="text" class="form-control" id="nomeProduto"
+                                            placeholder="Nome do produto">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="undMedida">UND. Medida</label>
+                                        <select class="form-control" id="undMedida">
+                                            <option>Kg</option>
+                                            <option>Litro</option>
+                                            <option>Unidade</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="qntdEstoque">Quantidade em Estoque</label>
+                                        <input type="number" class="form-control" id="qntdEstoque">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="valorUnitario">Valor Unitário</label>
+                                        <input type="text" class="form-control" id="valorUnitario">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="valorTotal">Valor total</label>
+                                        <input type="text" class="form-control" id="valorTotal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success" style="margin-top: 1.25em; width: 100%; padding: 1em;">
+                        <h3 class="fs-no-margin text-uppercase">
+                            Adicionar Produto
+                        </h3>
+                    </button>
+                </div>
             </div>
         </form>
     </div>
