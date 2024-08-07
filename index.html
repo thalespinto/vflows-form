@@ -11,6 +11,7 @@
 <body>
     <div class="fluig-style-guide">
         <form role="form">
+            <!-- ********SUPPLIER FORM********* -->
             <h1 class="fs-text-center text-uppercase">Cadastro fornecedor/produto</h1>
             <h2 class="fs-color-white fs-bg-info fs-no-margin-bottom"
                 style="padding: .5em; border-top-left-radius: .25em; border-top-right-radius: .25em;">Dados do
@@ -97,11 +98,13 @@
                 </div>
             </div>
 
+            <!-- **************PRODUCTS FORM*********** -->
             <h2 class="fs-color-white fs-bg-info fs-no-margin-bottom"
                 style="padding: .5em; border-top-left-radius: .25em; border-top-right-radius: .25em;">Produtos
             </h2>
             <div style="border: 1px solid black; padding: .5em;">
-                <div class="container-fluid" style="margin-top: 2em;">
+                <div class="container-fluid fs-display-flex fs-flex-direction-column"
+                    style="margin-top: 2em; gap: 1.5em;">
                     <div class="row fs-display-flex fs-align-items-center" style="gap: 1.25em;">
                         <button class="fs-bg-danger fs-no-border fs-border-radius">
                             <img src="assets/icons/flaticon-trash.png" alt="Ícone Deletar">
@@ -154,13 +157,57 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-success" style="margin-top: 1.25em; width: 100%; padding: 1em;">
+                    <button type="button" class="btn btn-success"
+                        style="margin-top: 1.25em; width: 100%; padding: 1em;">
                         <h3 class="fs-no-margin text-uppercase">
                             Adicionar Produto
                         </h3>
                     </button>
                 </div>
             </div>
+
+            <!-- **************FILES FORM*********** -->
+            <h2 class="fs-color-white fs-bg-info fs-no-margin-bottom"
+                style="padding: .5em; border-top-left-radius: .25em; border-top-right-radius: .25em;">Anexos
+            </h2>
+            <div style="border: 1px solid black; padding: .5em;">
+                <div class="container-fluid" style="margin-top: 2em; ">
+
+                    <div class="col-xs-12 fs-display-flex fs-flex-direction-column fs-align-items-start fs-border-radius"
+                        style="border: 1px solid black; padding: 2em; min-height: 4em; gap: 10px">
+                        <div style="position: absolute;
+                            top: -.5em;
+                            left: 5%;
+                            transform: translateX(-50%);
+                            background-color: white;
+                            padding: 0 .25em;">
+                            <h3 class="fs-no-margin">Anexos</h3>
+                        </div>
+                        <div class="fs-display-flex fs-align-items-center" style="gap: 1em;">
+                            <div>
+                                <button class="fs-bg-danger fs-no-border fs-border-radius">
+                                    <img src="assets/icons/flaticon-trash.png" alt="Ícone Deletar">
+                                </button>
+                                <button class="fs-bg-info fs-no-border fs-border-radius">
+                                    <img src="assets/icons/flaticon-file.png" alt="Ícone Deletar">
+                                </button>
+                            </div>
+                            <h3>Arquivo 1</h3>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success"
+                        style="margin-top: 1.25em; width: 100%; padding: 1em;">
+                        <h3 class="fs-no-margin text-uppercase">
+                            Adicionar Arquivo
+                        </h3>
+                    </button>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success" style="margin-top: 1.25em; width: 100%; padding: 1em;">
+                <h3 class="fs-no-margin text-uppercase">
+                    Salvar Fornecedor
+                </h3>
+            </button>
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
