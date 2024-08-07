@@ -29,6 +29,11 @@ $(document).ready(() => {
             let $element = $(element);
             let newId = $element.attr('id').replace(/\d+$/, '') + productCount;
             $element.attr('id', newId).val('');
+            
+            if($element.attr('type') === 'button') {
+                $element.prop('disabled', false)
+                $element.addClass("fs-bg-danger")
+            }; 
         });
         attachEvents(newProductCard, productCount);
         newProductCard.appendTo('#products-container');
