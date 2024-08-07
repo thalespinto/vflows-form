@@ -23,17 +23,17 @@
                     <div class="row">
                         <div class="form-group col-md-8">
                             <label for="razaoSocial">Razão Social</label>
-                            <input type="text" class="form-control" id="razaoSocial" placeholder="Razão social">
+                            <input required type="text" class="form-control" id="razaoSocial" placeholder="Razão social">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="cnpj">CNPJ</label>
-                            <input type="text" class="form-control" id="cnpj" placeholder="00.000.000/0000-00">
+                            <input required type="text" class="form-control" id="cnpj" placeholder="00.000.000/0000-00">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-8">
                             <label for="nomeFantasia">Nome Fantasia</label>
-                            <input type="text" class="form-control" id="nomeFantasia" placeholder="Nome Fantasia">
+                            <input required type="text" class="form-control" id="nomeFantasia" placeholder="Nome Fantasia">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inscricaoEstadual">Inscrição Estadual</label>
@@ -43,7 +43,7 @@
                     <div class="row">
                         <div class="form-group col-md-8">
                             <label for="cep">CEP</label>
-                            <input type="text" class="form-control" id="cep" placeholder="12345-678">
+                            <input required type="text" class="form-control" id="cep" placeholder="12345-678">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inscricaoMunicipal">Inscrição Municipal</label>
@@ -53,45 +53,45 @@
                     <div class="row">
                         <div class="form-group col-md-8">
                             <label for="endereco">Endereço</label>
-                            <input type="text" class="form-control" id="endereco" placeholder="Rua tal">
+                            <input required type="text" class="form-control" id="endereco" placeholder="Rua tal">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="numero">Número</label>
-                            <input type="text" class="form-control" id="numero" placeholder="12">
+                            <input required type="text" class="form-control" id="numero" placeholder="12">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-12">
                             <label for="complemento">Complemento</label>
-                            <input type="text" class="form-control" id="complemento" placeholder="apt 101">
+                            <input required type="text" class="form-control" id="complemento" placeholder="apt 101">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-4">
                             <label for="bairro">Bairro</label>
-                            <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+                            <input required type="text" class="form-control" id="bairro" placeholder="Bairro">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="municipio">Município</label>
-                            <input type="text" class="form-control" id="municipio" placeholder="Município">
+                            <input required type="text" class="form-control" id="municipio" placeholder="Município">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="estado">Estado</label>
-                            <input type="text" class="form-control" id="estado" placeholder="Estado">
+                            <input required type="text" class="form-control" id="estado" placeholder="Estado">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="nomeContato">Nome da Pessoa de Contato</label>
-                            <input type="text" class="form-control" id="nomeContato" placeholder="Nome e Sobrenome">
+                            <input required type="text" class="form-control" id="nomeContato" placeholder="Nome e Sobrenome">
                         </div>
                         <div class="form-group col-md-3">
                             <label for="telefone">Telefone</label>
-                            <input type="text" class="form-control" id="telefone" placeholder="(12) 12345-6789">
+                            <input required type="text" class="form-control" id="telefone" placeholder="(12) 12345-6789">
                         </div>
                         <div class="form-group col-md-3">
                             <label for="email">E-mail</label>
-                            <input type="email" class="form-control" id="email" placeholder="email">
+                            <input required type="email" class="form-control" id="email" placeholder="email">
                         </div>
                     </div>
 
@@ -128,14 +128,14 @@
                                 <div class="row">
                                     <div class="form-group col-sm-12">
                                         <label for="nomeProduto">Nome do Produto</label>
-                                        <input type="text" class="form-control" id="nomeProduto"
+                                        <input required type="text" class="form-control" id="nomeProduto"
                                             placeholder="Nome do produto">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3">
                                         <label for="undMedida">UND. Medida</label>
-                                        <select class="form-control" id="undMedida">
+                                        <select required class="form-control" id="undMedida">
                                             <option>Kg</option>
                                             <option>Litro</option>
                                             <option>Unidade</option>
@@ -143,15 +143,15 @@
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label for="qntdEstoque">Quantidade em Estoque</label>
-                                        <input type="number" class="form-control" id="qntdEstoque">
+                                        <input required type="number" class="form-control" id="qntdEstoque">
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label for="valorUnitario">Valor Unitário</label>
-                                        <input type="text" class="form-control" id="valorUnitario">
+                                        <input required type="text" class="form-control" id="valorUnitario">
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label for="valorTotal">Valor total</label>
-                                        <input type="text" class="form-control" id="valorTotal">
+                                        <input required disabled type="text" class="form-control" id="valorTotal">
                                     </div>
                                 </div>
                             </div>
