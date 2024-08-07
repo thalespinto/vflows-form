@@ -10,16 +10,27 @@ $(document).ready(() => {
         });
     };
 
+    const attachDeleteEvent = (card, numeroProduto) => {
+        card.find(`#delete-button-product-card-${numeroProduto}`).on('click', function () {
+            card.remove();
+        });
+    }
+
+    const attachEvents = (card, numeroProduto) => {
+        attachTotalCalculationEvent(card, numeroProduto);
+        attachDeleteEvent(card, numeroProduto);
+    }
+
     $('#add-product').click(() => {
         productCount++;
         let newProductCard = $('#product-card-1').clone().attr('id', 'product-card-' + productCount);
         newProductCard.find('h3').first().text('Produto - ' + productCount);
-        newProductCard.find('input, select').each((_, element) => {
+        newProductCard.find('input, select, button').each((_, element) => {
             let $element = $(element);
             let newId = $element.attr('id').replace(/\d+$/, '') + productCount;
             $element.attr('id', newId).val('');
         });
-        attachTotalCalculationEvent(newProductCard, productCount);
+        attachEvents(newProductCard, productCount);
         newProductCard.appendTo('#products-container');
     });
 
