@@ -23,7 +23,8 @@
                     <div class="row">
                         <div class="form-group col-md-8">
                             <label for="razaoSocial">Razão Social</label>
-                            <input required type="text" class="form-control" id="razaoSocial" placeholder="Razão social">
+                            <input required type="text" class="form-control" id="razaoSocial"
+                                placeholder="Razão social">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="cnpj">CNPJ</label>
@@ -33,7 +34,8 @@
                     <div class="row">
                         <div class="form-group col-md-8">
                             <label for="nomeFantasia">Nome Fantasia</label>
-                            <input required type="text" class="form-control" id="nomeFantasia" placeholder="Nome Fantasia">
+                            <input required type="text" class="form-control" id="nomeFantasia"
+                                placeholder="Nome Fantasia">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="inscricaoEstadual">Inscrição Estadual</label>
@@ -83,11 +85,13 @@
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="nomeContato">Nome da Pessoa de Contato</label>
-                            <input required type="text" class="form-control" id="nomeContato" placeholder="Nome e Sobrenome">
+                            <input required type="text" class="form-control" id="nomeContato"
+                                placeholder="Nome e Sobrenome">
                         </div>
                         <div class="form-group col-md-3">
                             <label for="telefone">Telefone</label>
-                            <input required type="text" class="form-control" id="telefone" placeholder="(12) 12345-6789">
+                            <input required type="text" class="form-control" id="telefone"
+                                placeholder="(12) 12345-6789">
                         </div>
                         <div class="form-group col-md-3">
                             <label for="email">E-mail</label>
@@ -103,61 +107,63 @@
                 style="padding: .5em; border-top-left-radius: .25em; border-top-right-radius: .25em;">Produtos
             </h2>
             <div style="border: 1px solid black; padding: .5em;">
-                <div class="container-fluid fs-display-flex fs-flex-direction-column"
-                    style="margin-top: 2em; gap: 1.5em;">
-                    <div class="row fs-display-flex fs-align-items-center" style="gap: 1.25em;">
-                        <button class="fs-bg-danger fs-no-border fs-border-radius">
-                            <img src="assets/icons/flaticon-trash.png" alt="Ícone Deletar">
-                        </button>
-                        <div class="col-md-11 fs-display-flex fs-align-items-center fs-border-radius"
-                            style="border: 1px solid black; padding: .5em;">
-                            <div style="position: absolute;
-                            top: -.5em;
-                            left: 5%;
-                            transform: translateX(-50%);
-                            background-color: white;
-                            padding: 0 .25em;">
-                                <h3 class="fs-no-margin">Produto - 1</h3>
-                            </div>
-                            <div class="visible-md visible-lg"
-                                style="width: fit-content; padding: 1.25em; background-color: #8290cd; border-radius: 100%;">
-                                <img src="assets/icons/flaticon-product.png" alt="Ícone Deletar">
-                            </div>
-                            <div class="container">
-
-                                <div class="row">
-                                    <div class="form-group col-sm-12">
-                                        <label for="nomeProduto">Nome do Produto</label>
-                                        <input required type="text" class="form-control" id="nomeProduto"
-                                            placeholder="Nome do produto">
-                                    </div>
+                <div class="container-fluid fs-display-flex fs-flex-direction-column" style="margin-top: 2em;">
+                    <div id="products-container" class="fs-display-flex fs-flex-direction-column fs-scrollbar"
+                        style="gap: 1em; max-height: 450px; overflow-y: scroll; padding: 2em;">
+                        <div id="product-card" class="row fs-display-flex fs-align-items-center" style="gap: 1.25em;">
+                            <button class="fs-bg-danger fs-no-border fs-border-radius">
+                                <img src="assets/icons/flaticon-trash.png" alt="Ícone Deletar">
+                            </button>
+                            <div class="col-md-11 fs-display-flex fs-align-items-center fs-border-radius"
+                                style="border: 1px solid black; padding: .5em;">
+                                <div style="position: absolute;
+                                top: -.5em;
+                                left: 5%;
+                                transform: translateX(-50%);
+                                background-color: white;
+                                padding: 0 .25em;">
+                                    <h3 class="fs-no-margin">Produto - 1</h3>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <label for="undMedida">UND. Medida</label>
-                                        <select required class="form-control" id="undMedida">
-                                            <option>Kg</option>
-                                            <option>Litro</option>
-                                            <option>Unidade</option>
-                                        </select>
+                                <div class="visible-md visible-lg"
+                                    style="width: fit-content; padding: 1.25em; background-color: #8290cd; border-radius: 100%;">
+                                    <img src="assets/icons/flaticon-product.png" alt="Ícone Deletar">
+                                </div>
+                                <div class="container">
+
+                                    <div class="row">
+                                        <div class="form-group col-sm-12">
+                                            <label for="nomeProduto">Nome do Produto</label>
+                                            <input required type="text" class="form-control" id="nomeProduto"
+                                                placeholder="Nome do produto">
+                                        </div>
                                     </div>
-                                    <div class="form-group col-md-3">
-                                        <label for="qntdEstoque">Quantidade em Estoque</label>
-                                        <input required type="number" class="form-control" id="qntdEstoque">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label for="valorUnitario">Valor Unitário</label>
-                                        <input required type="text" class="form-control" id="valorUnitario">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label for="valorTotal">Valor total</label>
-                                        <input required disabled type="text" class="form-control" id="valorTotal">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label for="undMedida">UND. Medida</label>
+                                            <select required class="form-control" id="undMedida">
+                                                <option>Kg</option>
+                                                <option>Litro</option>
+                                                <option>Unidade</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="qntdEstoque">Quantidade em Estoque</label>
+                                            <input required type="number" class="form-control" id="qntdEstoque">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="valorUnitario">Valor Unitário</label>
+                                            <input required type="text" class="form-control" id="valorUnitario">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="valorTotal">Valor total</label>
+                                            <input required disabled type="text" class="form-control" id="valorTotal">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-success"
+                    <button id="add-product" type="button" class="btn btn-success"
                         style="margin-top: 1.25em; width: 100%; padding: 1em;">
                         <h3 class="fs-no-margin text-uppercase">
                             Adicionar Produto
@@ -211,6 +217,7 @@
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/productForm.js"></script>
 </body>
 
 </html>
