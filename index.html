@@ -178,8 +178,8 @@
             <div style="border: 1px solid black; padding: .5em;">
                 <div class="container-fluid" style="margin-top: 2em; ">
 
-                    <div id="attachments-container" class="col-xs-12 fs-display-flex fs-flex-direction-column fs-align-items-start fs-border-radius"
-                        style="border: 1px solid black; padding: 2em; min-height: 4em; gap: 10px">
+                    <div class="col-xs-12 fs-display-flex fs-flex-direction-column fs-align-items-start fs-border-radius"
+                        style="border: 1px solid black; min-height: 4em; gap: 10px;">
                         <div style="position: absolute;
                             top: -.5em;
                             left: 5%;
@@ -188,16 +188,19 @@
                             padding: 0 .25em;">
                             <h3 class="fs-no-margin">Itens</h3>
                         </div>
-                        <div id="attachment-card-1" class="fs-display-flex fs-align-items-center" style="gap: 1em;">
-                            <div>
-                                <button id="delete-button-attachment-card-1" type="button" disabled class="fs-bg-white fs-no-border fs-border-radius">
-                                    <img src="assets/icons/flaticon-trash.png" alt="Ícone Deletar">
-                                </button>
-                                <button id="download-button-attachment-card-1" type="button" class="fs-bg-info fs-no-border fs-border-radius">
-                                    <img src="assets/icons/flaticon-file.png" alt="Ícone Deletar">
-                                </button>
+                        <div id="attachments-container" class="fs-display-flex fs-flex-direction-column fs-align-items-start" style="width: 100%; max-height: 450px; overflow-y: scroll; padding: 2em; gap: 1em;">
+
+                            <div id="attachment-card-1" class="fs-display-flex fs-align-items-center" style="gap: 1em;">
+                                <div>
+                                    <button id="delete-button-attachment-card-1" type="button" disabled class="fs-bg-white fs-no-border fs-border-radius">
+                                        <img src="assets/icons/flaticon-trash.png" alt="Ícone Deletar">
+                                    </button>
+                                    <button id="download-button-attachment-card-1" type="button" class="fs-bg-info fs-no-border fs-border-radius">
+                                        <img src="assets/icons/flaticon-file.png" alt="Ícone Deletar">
+                                    </button>
+                                </div>
+                                <input id="attachment-input-1" type="file" required >
                             </div>
-                            <input id="attachment-input-1" type="file" required >
                         </div>
                     </div>
                     
