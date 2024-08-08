@@ -10,7 +10,11 @@ $(document).ready(() => {
             reader.onloadend = () => {
                 try{
                     var base64data = reader.result;
-                    sessionStorage.setItem(`attachment-${attachmentNumber}`, base64data);
+                    var sessionStorageFileStructure = {
+                        nomeArquivo: file.name,
+                        blobArquivo: base64data
+                    }
+                    sessionStorage.setItem(`attachment-${attachmentNumber}`, JSON.stringify(sessionStorageFileStructure));
                 } catch {
                     alert('Erro ao fazer uploado do arquivo, tente novamente.')
                 }
