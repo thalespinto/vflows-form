@@ -1,4 +1,31 @@
+
+
 $(document).ready(() => {
+    const searchCep = (cep) => {
+        cep = cep.replace(/\D/g, '');
+    
+        if (cep.length !== 8) {
+            return;
+        }
+    
+        fetch(`https://viacep.com.br/ws/${cep}/json/`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.erro) {
+                    alert('CEP não encontrado. Preencha os campos de endereço manualmente.');
+                } else {
+                    console.log(data);
+                    $('#endereco').val(data.logradouro);
+                    $('#bairro').val(data.bairro);
+                    $('#municipio').val(data.localidade);
+                    $('#estado').val(data.uf);
+                }
+            })
+            .catch(error => {
+                console.error('Erro ao buscar o CEP:', error);
+            });
+    }
+
     const cnpjInputFormater = (input) => {
         input.on('input', () => {
             var cnpj = input.val().replace(/\D/g, '');
@@ -97,6 +124,9 @@ $(document).ready(() => {
                 break;
             case "cep":
                 cepFormater($element);
+                $element.on('blur', () => {
+                    searchCep($element.val());
+                });
                 break;
             case "inscricaoMunicipal":
                 inscricaoMunicipalFormater($element);
