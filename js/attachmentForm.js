@@ -48,7 +48,7 @@ $(document).ready(() => {
     attachDownloadEvent($('#attachment-card-1'), 1);
 
     const attachDeleteEvent = (card, attachmentNumber) => {
-        card.find(`#delete-button-attachment-card-${attachmentNumber}`).on('click', function () {
+        card.find(`#delete-button-attachment-card-${attachmentNumber}`).on('click', () => {
             card.remove();
             sessionStorage.removeItem(`attachment-${attachmentNumber}`);
         });

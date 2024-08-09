@@ -2,7 +2,7 @@ $(document).ready(() => {
     let productCount = 1;
 
     const attachTotalCalculationEvent = (card, productNumber) => {
-        card.find(`#qntdEstoque-${productNumber}, #valorUnitario-${productNumber}`).on('input', function () {
+        card.find(`#qntdEstoque-${productNumber}, #valorUnitario-${productNumber}`).on('input', () => {
             let qntdEstoque = parseFloat(card.find(`#qntdEstoque-${productNumber}`).val()) || 0;
             let valorUnitario = parseFloat(card.find(`#valorUnitario-${productNumber}`).val().replace(',', '.')) || 0;
             let valorTotal = qntdEstoque * valorUnitario;
@@ -11,7 +11,7 @@ $(document).ready(() => {
     };
 
     const attachDeleteEvent = (card, productNumber) => {
-        card.find(`#delete-button-product-card-${productNumber}`).on('click', function () {
+        card.find(`#delete-button-product-card-${productNumber}`).on('click', () => {
             card.remove();
         });
     }

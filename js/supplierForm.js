@@ -44,7 +44,7 @@ $(document).ready(() => {
     }
 
     const inscricaoEstadualFormater = (input) => {
-        input.on('input', function() {
+        input.on('input',() => {
             var value = input.val().replace(/\D/g, '');
     
             if (value.length > 9) {
@@ -96,7 +96,7 @@ $(document).ready(() => {
     }
 
     const telefoneFormater = (input) => {
-        input.on('input', function() {
+        input.on('input', () => {
             var phone = input.val().replace(/\D/g, '');
     
             if (phone.length > 11) {
