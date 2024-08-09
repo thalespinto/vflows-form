@@ -11,12 +11,8 @@
     Os campos de CNPJ, CEP e telefone poderiam ser validados para garantir a entrada de dados corretos.<br>
     <em>Impacto:</em> Melhoria tanto na experiência do usuário quanto na integridade da base de dados.
   </li>
-  <li><strong>Limpeza do <code>sessionStorage</code> Após o Envio:</strong><br>
-    A <code>sessionStorage</code> deve ser limpa após o envio do formulário.<br>
-    <em>Impacto:</em> Garantia de que a aplicação funcione corretamente, evitando dados residuais que possam interferir no comportamento da aplicação.
-  </li>
-  <li><strong>Reset na quantidade de cards de produto e anexo após o envio:</strong><br>
-    As listas de produtos e anexos devem ser limpas(deixar apenas 1 card em cada) após o envio.<br>
+  <li><strong>Reset na quantidade de cards de anexo após o envio:</strong><br>
+    As listas de anexos deve ser limpa(deixar apenas 1 card) após o envio.<br>
     <em>Impacto:</em> Melhoria na experiência do usuário.
   </li>
 </ol>
