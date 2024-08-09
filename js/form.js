@@ -1,6 +1,13 @@
 $(document).ready(() => {
-    const resetForm = () => {
+    const resetForm = (productCardsIds, attachmentCardKeys) => {
+        productCardsIds.forEach((cardId) => {
+            if(cardId !== "product-card-1") $(`#${cardId}`).remove();
+        })
+
+        attachmentCardKeys.forEach((key) => sessionStorage.removeItem(key));
+
         $('form').get(0).reset();
+
     }
 
     $('form').on('submit', (e) => {
@@ -26,7 +33,7 @@ $(document).ready(() => {
             anexos: []
         };
 
-        var productCardsId = [];
+        var productCardsIds = [];
         $('#products-container').children('div').each((index, element) => {
             var $element = $(element);
 
@@ -44,12 +51,9 @@ $(document).ready(() => {
             })
 
             fornecedorData.produtos.push(produto);
-            productCardsId.push($element.attr('id'));
+            productCardsIds.push($element.attr('id'));
         });
-        productCardsId.forEach((cardId) => {
-            if(cardId !== "product-card-1") $(`#${cardId}`).remove();
-        })
-        productCardsId = []
+        
 
         var attachmentCardKeys = []
         for (let indice = 0; indice < sessionStorage.length; indice++) {
@@ -65,12 +69,13 @@ $(document).ready(() => {
                 attachmentCardKeys.push(key);
             }
         }
-        attachmentCardKeys.forEach((key) => sessionStorage.removeItem(key));
-        attachmentCardKeys = []
+        
 
         var jsonData = JSON.stringify(fornecedorData);
 
         console.table(jsonData);
-        resetForm();
+        resetForm(productCardsIds, attachmentCardKeys);
+        productCardsIds = []
+        attachmentCardKeys = []
     });
 });
