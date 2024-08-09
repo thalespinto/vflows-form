@@ -11,10 +11,6 @@
     Os campos de CNPJ, CEP e telefone poderiam ser validados para garantir a entrada de dados corretos.<br>
     <em>Impacto:</em> Melhoria tanto na experiência do usuário quanto na integridade da base de dados.
   </li>
-  <li><strong>Limpeza do <code>sessionStorage</code> Após o Envio:</strong><br>
-    A <code>sessionStorage</code> deve ser limpa após o envio do formulário.<br>
-    <em>Impacto:</em> Garantia de que a aplicação funcione corretamente, evitando dados residuais que possam interferir no comportamento da aplicação.
-  </li>
 </ol>
 
 <h2>Execução do Projeto</h2>
