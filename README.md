@@ -11,6 +11,10 @@
     Os campos de CNPJ, CEP e telefone poderiam ser validados para garantir a entrada de dados corretos.<br>
     <em>Impacto:</em> Melhoria tanto na experiência do usuário quanto na integridade da base de dados.
   </li>
+  <li><strong>Reset na quantidade de cards de anexo após o envio:</strong><br>
+    As listas de anexos deve ser limpa(deixar apenas 1 card) após o envio.<br>
+    <em>Impacto:</em> Melhoria na experiência do usuário.
+  </li>
 </ol>
 
 <h2>Execução do Projeto</h2>
