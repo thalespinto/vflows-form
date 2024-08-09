@@ -51,6 +51,7 @@ $(document).ready(() => {
         })
         productCardsId = []
 
+        var attachmentCardKeys = []
         for (let indice = 0; indice < sessionStorage.length; indice++) {
             var key = sessionStorage.key(indice);
             if(key){
@@ -61,8 +62,11 @@ $(document).ready(() => {
                     ...data
                 }
                 fornecedorData.anexos.push(anexo);
+                attachmentCardKeys.push(key);
             }
         }
+        attachmentCardKeys.forEach((key) => sessionStorage.removeItem(key));
+        attachmentCardKeys = []
 
         var jsonData = JSON.stringify(fornecedorData);
 
