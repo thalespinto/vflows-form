@@ -26,6 +26,7 @@ $(document).ready(() => {
             anexos: []
         };
 
+        var productCardsId = [];
         $('#products-container').children('div').each((index, element) => {
             var $element = $(element);
 
@@ -43,7 +44,12 @@ $(document).ready(() => {
             })
 
             fornecedorData.produtos.push(produto);
+            productCardsId.push($element.attr('id'));
         });
+        productCardsId.forEach((cardId) => {
+            if(cardId !== "product-card-1") $(`#${cardId}`).remove();
+        })
+        productCardsId = []
 
         for (let indice = 0; indice < sessionStorage.length; indice++) {
             var key = sessionStorage.key(indice);
