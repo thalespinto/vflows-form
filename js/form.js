@@ -1,4 +1,8 @@
 $(document).ready(() => {
+    const resetForm = () => {
+        $('form').get(0).reset();
+    }
+
     $('form').on('submit', (e) => {
         e.preventDefault();
 
@@ -57,5 +61,7 @@ $(document).ready(() => {
         var jsonData = JSON.stringify(fornecedorData);
 
         console.table(jsonData);
+        resetForm();
+        resetSessionStorage();
     });
 });
