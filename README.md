@@ -15,6 +15,10 @@
     A <code>sessionStorage</code> deve ser limpa após o envio do formulário.<br>
     <em>Impacto:</em> Garantia de que a aplicação funcione corretamente, evitando dados residuais que possam interferir no comportamento da aplicação.
   </li>
+  <li><strong>Reset na quantidade de cards de produto e anexo após o envio:</strong><br>
+    As listas de produtos e anexos devem ser limpas(deixar apenas 1 card em cada) após o envio.<br>
+    <em>Impacto:</em> Melhoria na experiência do usuário.
+  </li>
 </ol>
 
 <h2>Execução do Projeto</h2>
