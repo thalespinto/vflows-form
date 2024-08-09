@@ -62,6 +62,5 @@ $(document).ready(() => {
 
         console.table(jsonData);
         resetForm();
-        resetSessionStorage();
     });
 });

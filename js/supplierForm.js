@@ -14,7 +14,6 @@ $(document).ready(() => {
                 if (data.erro) {
                     alert('CEP não encontrado. Preencha os campos de endereço manualmente.');
                 } else {
-                    console.log(data);
                     $('#endereco').val(data.logradouro);
                     $('#bairro').val(data.bairro);
                     $('#municipio').val(data.localidade);
